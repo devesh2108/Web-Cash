@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="stylesheets/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                        <%= result %>
+
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">REGISTER HERE</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="First name" id="fname" placeholder="Your First Name"/>
+                        </div>
+                         <div class="form-group">
+                            <input type="text" class="form-input" name="Last name" id="lname" placeholder="Your Last Name"/>
+                        </div>
+                         <div class="form-group">
+                             <input type="text" class="form-input" name="Contact" id="contact" placeholder="Your Contact No"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+                        </div>
+                         <div class="form-group">
+                             <input type="text" class="form-input" name="Gender" id="gender" placeholder="Gender"/>
+                        </div>
+                         <div class="form-group">
+                             <input type="text" class="form-input" name="Address"  placeholder="Your Address"/>
+                        </div>
+                           <div class="form-group">
+                             <input type="text" class="form-input" name="City"  placeholder="Your City"/>
+                        </div>
+                           <div class="form-group">
+                             <input type="text" class="form-input" name="State"  placeholder="State"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="Username" id="username" placeholder="Username"/>
+                            
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="password" id="re_password" placeholder=" Password"/>
+                            
+                          </div>
+                        <div class="form-group">
+                          <input type="hidden" class="form-input" name="vstatus" value='1'/>
+                        </div>
+                      <div class="form-group">
+                        <input type="hidden" class="form-input" name="role" value="user"/>
+                      </div>
+               
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Register"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a href="/login" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
